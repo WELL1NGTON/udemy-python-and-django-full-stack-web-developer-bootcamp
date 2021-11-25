@@ -23,15 +23,30 @@
 
 # Try to figure out what this code is doing and how it might be useful to you
 import random
-digits = list(range(10))
-random.shuffle(digits)
+from typing import Dict
 
-random_number = digits[:3]
+
+def random_digits():
+    digits = list(range(10))
+    random.shuffle(digits)
+    return digits[:3]
+
+
+def number_correct(guess: list, answer: list) -> Dict[str, int]:
+    dict = {"inPosition": 0, "inWrongPosition": 0}
+    for i in range(3):
+        if guess[i] == answer[i]:
+            dict["inPosition"] += 1
+        elif guess[i] in answer:
+            dict["inWrongPosition"] += 1
+    return dict
+
+
+random_number = random_digits()
 print(random_number)
 user_guess = []
 
 while user_guess != random_number:
-    # Another hint:
     guess = input("What is your guess? ")
     print(guess)
     if len(guess) == 3:
@@ -39,7 +54,27 @@ while user_guess != random_number:
         user_guess.append(int(guess[0]))
         user_guess.append(int(guess[1]))
         user_guess.append(int(guess[2]))
-    print(user_guess)
+    else:
+        print("Please enter three digits.")
+        continue
+
+    if user_guess == random_number:
+        print("You guessed the number!")
+        break
+    else:
+        guess_positions = number_correct(user_guess, random_number)
+
+        if guess_positions["inPosition"] == 1:
+            print("You've guessed a correct number in the correct position")
+        elif guess_positions["inPosition"] > 1:
+            print("You've guessed {} correct numbers in the correct position".format(
+                  guess_positions["inPosition"]))
+
+        if guess_positions["inWrongPosition"] == 1:
+            print("You've guessed a correct number in the wrong position")
+        elif guess_positions["inWrongPosition"] > 1:
+            print("You've guessed {} correct numbers in the wrong position".format(
+                  guess_positions["inWrongPosition"]))
 
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
