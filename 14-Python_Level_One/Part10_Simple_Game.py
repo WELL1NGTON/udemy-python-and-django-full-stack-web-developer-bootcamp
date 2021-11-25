@@ -73,7 +73,7 @@ while user_guess != random_number:
             print("You've guessed a correct number in the wrong position")
         elif guess_positions["inWrongPosition"] > 1:
             print("You've guessed {} correct numbers in the wrong position".format(
-                  guess_positions["inWrongPosition"]))
+                guess_positions["inWrongPosition"]))
 
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
