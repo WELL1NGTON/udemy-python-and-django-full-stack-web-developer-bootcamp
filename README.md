@@ -168,11 +168,11 @@ Conteúdo do curso
 - [x] Part 6 - Exercise Overview 02:22
 - [x] Part 6 - Exercise Solutions 04:49
 - [x] Part 7 - Control Flow 19:09
-- [ ] Part Eight Functions 15:19
-- [ ] Part Nine Function Exercises 03:13
-- [ ] Function Exercises Solutions 10:28
-- [ ] Part Ten Simple Game Project Overview 02:50
-- [ ] Simple Game Project Solutions 13:05
+- [x] Part Eight Functions 15:19
+- [x] Part Nine Function Exercises 03:13
+- [x] Function Exercises Solutions 10:28
+- [x] Part Ten Simple Game Project Overview 02:50
+- [x] Simple Game Project Solutions 13:05
 
 ### Python - Level Two
 

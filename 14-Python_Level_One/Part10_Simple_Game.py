@@ -35,15 +35,14 @@ def random_digits():
 def number_correct(guess: list, answer: list) -> Dict[str, int]:
     dict = {"inPosition": 0, "inWrongPosition": 0}
     for i in range(3):
-        if guess[i] == answer[i]:
+        if answer[i] == guess[i]:
             dict["inPosition"] += 1
-        elif guess[i] in answer:
+        elif answer[i] in guess:
             dict["inWrongPosition"] += 1
     return dict
 
 
 random_number = random_digits()
-print(random_number)
 user_guess = []
 
 while user_guess != random_number:
