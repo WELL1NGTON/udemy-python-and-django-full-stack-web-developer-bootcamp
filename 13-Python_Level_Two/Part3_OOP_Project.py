@@ -1,3 +1,13 @@
+
+#####################################
+############### TODO ################
+#####################################
+
+# TODO: Finish it, the rules about "it is war" are too confusing for me to do at my own
+# but for now the base logic is done, later i'll research this bad "game" to understand
+# better how to implement that part of the game..
+
+
 #####################################
 ### WELCOME TO YOUR OOP PROJECT #####
 #####################################
@@ -97,9 +107,6 @@ class Deck:
         if total < ammount:
             ammount = total
 
-        # print(total, ammount)
-        # print(self.__cards)
-        # print(self.__cards[0])
         cards_drawn = self.__cards[total - ammount: total]
         cards_remaining = self.__cards[0:total - ammount]
 
@@ -108,9 +115,10 @@ class Deck:
         return cards_drawn
 
     def put_cards_bottom(self, cards: list[Card]) -> None:
-        new_cards = cards.copy()
-        new_cards.append(self.__cards)
-        self.__cards = new_cards
+        self.__cards = cards + self.__cards
+
+    def cards(self) -> list[Card]:
+        return self.__cards
 
     def shuffle(self) -> None:
         global shuffle
@@ -124,9 +132,9 @@ class Deck:
             decks.append(Deck(self.draw(ammount_cards)))
 
         for deck in decks:
-            deck.put_cards_bottom(self.draw(1))
             if len(self) == 0:
                 break
+            deck.put_cards_bottom(self.draw(1))
 
         return decks
 
@@ -144,7 +152,22 @@ class Hand(Deck):
     '''
 
     def __init__(self, cards: list[Card]) -> None:
-        super(Hand, self).__init__(cards=cards, generate_new=False)
+        super().__init__(cards=cards, generate_new=False)
+
+    def take_top_card(self) -> Card:
+        return self.draw(1)[0]
+
+    def take_three_face_down_cards(self) -> list[Card]:
+        return self.draw(3)
+
+    def one_face_down_card(self) -> list[Card]:
+        return self.draw(3)
+
+    def __len__(self) -> int:
+        return super().__len__()
+
+    def __str__(self) -> str:
+        return super().__str__()
 
 
 class Player:
@@ -161,8 +184,10 @@ class Player:
         print(str(len(self)) + "x🂠")
 
     def play_card(self) -> Card:
-        print(self.__hand)
-        card = self.__hand.draw(1)[0]
+        if not self.has_cards():
+            return None
+        drawn = self.__hand.draw(1)
+        card = drawn[0]
         print(self, "played the card", card)
         return card
 
@@ -182,7 +207,12 @@ class Player:
 def turn(player1: Player, player2: Player) -> None:
     card_p = player.play_card()
     card_c = computer.play_card()
-    pass
+    if card_c.value() == card_p.value():
+        it_is_war(player, computer)
+
+
+def it_is_war(player1: Player, player2: Player) -> Player:
+    print("It is war!")
 
 
 def has_winner(player1: Player, player2: Player) -> bool:
@@ -199,13 +229,18 @@ starting_deck.shuffle()
 
 splitted_deck = starting_deck.split(2)
 
-print(splitted_deck[1])
+player = Player("player", Hand(splitted_deck[0].cards()))
 
-player = Player("player", Hand(splitted_deck[0]))
-
-computer = Player("computer", Hand(splitted_deck[1]))
+computer = Player("computer", Hand(splitted_deck[1].cards()))
 
 while not has_winner(player, computer):
     turn(player, computer)
 
+winner = None
+if not player.has_cards():
+    winner = computer
+else:
+    winner = player
+
+print(winner, "has won the game!")
 # Use the 3 classes along with some logic to play a game of war!
