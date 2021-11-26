@@ -176,25 +176,25 @@ Conteúdo do curso
 
 ### Python - Level Two
 
-- [ ] Introduction to Python Level Two 00:30
-- [ ] Scope 16:32
-- [ ] Object Oriented Programming - Part One 05:30
-- [ ] Object Oriented Programming - Part Two 15:34
-- [ ] Object Oriented Programming - Part Three 12:17
-- [ ] OOP Project 03:27
-- [ ] OOP Project Solutions 25:12
-- [ ] Errors and Exceptions 11:20
-- [ ] Regular Expressions 18:47
-- [ ] Modules and Packages 05:05
-- [ ] Decorators 17:59
-- [ ] Name and Main 05:50
+- [x] Introduction to Python Level Two 00:30
+- [x] Scope 16:32
+- [x] Object Oriented Programming - Part One 05:30
+- [x] Object Oriented Programming - Part Two 15:34
+- [x] Object Oriented Programming - Part Three 12:17
+- [x] OOP Project 03:27
+- [x] OOP Project Solutions 25:12
+- [x] Errors and Exceptions 11:20
+- [x] Regular Expressions 18:47
+- [x] Modules and Packages 05:05
+- [x] Decorators 17:59
+- [x] Name and Main 05:50
 
 ### Django Level One - Basics
 
-- [ ] Django Level One - Part One - Django Setup 12:12
-- [ ] Django Level One - Part Two - Django Project 10:04
-- [ ] Django Level One - Part Three - Django Application 13:00
-- [ ] Django Level One - Part Four - Challenge Task 01:27
+- [x] Django Level One - Part One - Django Setup 12:12
+- [x] Django Level One - Part Two - Django Project 10:04
+- [x] Django Level One - Part Three - Django Application 13:00
+- [x] Django Level One - Part Four - Challenge Task 01:27
 - [ ] Django Level One - Part Five - Challenge Solutions 05:33
 - [ ] Django Level One - Part Six - URL Mappings 09:02
 - [ ] Django Level One - Part Seven - Templates 16:51
