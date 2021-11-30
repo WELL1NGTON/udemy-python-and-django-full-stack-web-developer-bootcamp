@@ -1,5 +1,11 @@
 {
   "editor.rulers": [90],
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
