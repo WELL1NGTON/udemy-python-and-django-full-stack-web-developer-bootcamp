@@ -3,7 +3,7 @@
   "files.associations": {
     "**/*.html": "html",
     "**/templates/**/*.html": "django-html",
-    "**/templates/**/*": "django-txt",
+    // "**/templates/**/*": "django-txt", // Causing problems with "learning_templates" project
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
   "files.exclude": {
