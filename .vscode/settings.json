@@ -2,7 +2,7 @@
   "editor.rulers": [90],
   "files.associations": {
     "**/*.html": "html",
-    "**/templates/**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
