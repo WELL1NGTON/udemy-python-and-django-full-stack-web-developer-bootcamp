@@ -195,40 +195,40 @@ Conteúdo do curso
 - [x] Django Level One - Part Two - Django Project 10:04
 - [x] Django Level One - Part Three - Django Application 13:00
 - [x] Django Level One - Part Four - Challenge Task 01:27
-- [ ] Django Level One - Part Five - Challenge Solutions 05:33
-- [ ] Django Level One - Part Six - URL Mappings 09:02
-- [ ] Django Level One - Part Seven - Templates 16:51
-- [ ] Django Level One - Part Eight Templates Challenge 01:37
-- [ ] Django Level One - Part Nine - Templates Solutions 08:11
-- [ ] Django Level One - Part Ten - Static Files 18:31
+- [x] Django Level One - Part Five - Challenge Solutions 05:33
+- [x] Django Level One - Part Six - URL Mappings 09:02
+- [x] Django Level One - Part Seven - Templates 16:51
+- [x] Django Level One - Part Eight Templates Challenge 01:37
+- [x] Django Level One - Part Nine - Templates Solutions 08:11
+- [x] Django Level One - Part Ten - Static Files 18:31
 
 ### Django Level Two
 
-- [ ] Introduction to Django Level Two 10:54
-- [ ] Django Models Overview 08:23
-- [ ] Creating Models 16:07
-- [ ] Population Scripts 12:54
-- [ ] Models-Templates-Views Paradigm 14:57
-- [ ] Django Level Two Project Exercise 02:15
-- [ ] Django Level Two Project Solutions 26:24
+- [x] Introduction to Django Level Two 10:54
+- [x] Django Models Overview 08:23
+- [x] Creating Models 16:07
+- [x] Population Scripts 12:54
+- [x] Models-Templates-Views Paradigm 14:57
+- [x] Django Level Two Project Exercise 02:15
+- [x] Django Level Two Project Solutions 26:24
 
 ### Django Level Three
 
-- [ ] Introduction to Django Level Three 00:34
-- [ ] Django Forms 11:26
-- [ ] Form Basics Code Along 18:15
-- [ ] Form Validation 19:40
-- [ ] Model Forms 06:49
-- [ ] Model Forms Exercise 16:59
+- [x] Introduction to Django Level Three 00:34
+- [x] Django Forms 11:26
+- [x] Form Basics Code Along 18:15
+- [x] Form Validation 19:40
+- [x] Model Forms 06:49
+- [x] Model Forms Exercise 16:59
 
 ### Django Level Four
 
-- [ ] Introduction to Django Level Four 01:24
-- [ ] Relative URLs with Templates 05:30
-- [ ] Relative URLs Coding Examples 20:14
-- [ ] URL Template Inheritance 03:59
-- [ ] Template Inheritance Coding Example 12:54
-- [ ] Quick Note on Custom Template Filters 00:28
+- [x] Introduction to Django Level Four 01:24
+- [x] Relative URLs with Templates 05:30
+- [x] Relative URLs Coding Examples 20:14
+- [x] URL Template Inheritance 03:59
+- [x] Template Inheritance Coding Example 12:54
+- [x] Quick Note on Custom Template Filters 00:28
 - [ ] Template Filters and Custom Filters 04:17
 - [ ] Template Filters Coding Examples 10:30
 
